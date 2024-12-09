@@ -44,4 +44,4 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/aelar-docking.git
+   git clone https://github.com/aluizakarl/ptp-lar_modmol.git
