@@ -15,7 +15,7 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
   - `ptp-lar_d1&d2domains.fasta`
 
 ### 2. **Modeled Structures**
-- Protein 3D models generated using homology modeling tools (e.g., AlphaFold).
+- Protein 3D models generated using homology modeling tool SwissModel.
 - **Location:** `./models/`
 - **Files:**
   - `ir_catalyticDomain.pdb`
@@ -24,14 +24,14 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
   - `ptp-lar_d1&d2domains.pdb`
 
 ### 3. **Prepared and Optimized Models**
-- Structures prepared and optimized for docking using tools such as Maestro (PrepWizard) or other preparation pipelines.
+- Structures prepared and optimized for docking using tools: Vienna (http://vienna-ptm.univie.ac.at/) and Maestro (PrepWizard).
 - **Location:** `./prepared_structures/`
 - **Files:**
   - `ir_pt2tyr_prepared.pdb`
   - `ir_pt3tyr_prepared.pdb`
 
 ### 4. **Docking Results**
-- Results from protein-protein docking experiments using HDOCK or equivalent software.
+- Results from protein-protein docking experiments using HDOCK.
 - **Location:** `./dockingResults/`
 - **Files:**
   - `*.pdb`
