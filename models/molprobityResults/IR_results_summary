@@ -1,0 +1,18 @@
+All-Atom
+Contacts 	Clashscore, all atoms:	2.77 	98th percentile* (N=1784, all resolutions)
+Clashscore is the number of serious steric overlaps (> 0.4 Å) per 1000 atoms.
+Protein
+Geometry 	Poor rotamers	0	0.00% 	Goal: <0.3%
+Favored rotamers	255	98.08% 	Goal: >98%
+Ramachandran outliers	0	0.00% 	Goal: <0.05%
+Ramachandran favored	288	97.63% 	Goal: >98%
+Rama distribution Z-score	1.33 ± 0.47 	Goal: abs(Z score) < 2
+MolProbity score^	1.14	99th percentile* (N=27675, 0Å - 99Å)
+Cβ deviations >0.25Å	3	1.08% 	Goal: 0
+Bad bonds:	0 / 2426	0.00% 	Goal: 0%
+Bad angles:	22 / 3285	0.67% 	Goal: <0.1%
+Peptide Omegas 	Cis Prolines:	1 / 16	6.25% 	Expected: ≤1 per chain, or ≤5%
+Low-resolution Criteria 	CaBLAM outliers	3	1.0% 	Goal: <1.0%
+CA Geometry outliers	1	0.34% 	Goal: <0.5%
+Additional validations 	Chiral volume outliers	0/352	
+Waters with clashes	0/0	0.00%	See UnDowser table for details

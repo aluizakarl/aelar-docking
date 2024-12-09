@@ -1,0 +1,23 @@
+Using electron cloud x-H distances and vdW radii
+
+No H/D atoms detected - forcing hydrogen addition!
+
+
+Adding H/D atoms with reduce...
+
+Bad Clashes >= 0.4 Angstrom:
+ A 179  TYR  CZ   A 181  LYS  HB2 :0.557
+ A  29  LEU  HB3  A  32  LEU HD13 :0.555
+ A  10  ILE HD12  A  29  LEU HD22 :0.518
+ A  29  LEU  CD1  A  89  ILE HG21 :0.513
+ A  30  THR HG22  A  31  GLN  HG2 :0.459
+ A  10  ILE  CD1  A  29  LEU HD22 :0.457
+ A 179  TYR  CE2  A 181  LYS  HB2 :0.453
+ A 179  TYR  CZ   A 231  ASN  HB2 :0.444
+ A 213  VAL HG13  A 244  MET  HE1 :0.438
+ A  29  LEU HD11  A  89  ILE  CG2 :0.429
+ A 257  LEU HD22  A 279  LEU HD11 :0.425
+ A  29  LEU HD11  A  89  ILE HG23 :0.411
+ A  29  LEU  CD1  A  89  ILE  CG2 :0.401
+clashscore = 2.77
+clashscore (B factor cutoff = 40) = 2.774221
