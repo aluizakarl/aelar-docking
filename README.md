@@ -33,15 +33,7 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
 ### 4. **Docking Results**
 - Results from protein-protein docking experiments using HDOCK.
 - **Location:** `./dockingResults/`
-- **Files:**
-  - `*.pdb`
-  - `*.pdb`
-  - Supporting log files and scoring summaries.
+- Files: PDB files from selected docking poses.
+- Supporting log files and scoring summaries.
+- Important files are in the 'dynamicFiles' directory.
 
----
-
-## Usage
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/aluizakarl/aelar-docking.git
