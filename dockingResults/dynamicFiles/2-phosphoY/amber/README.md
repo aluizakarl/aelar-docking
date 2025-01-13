@@ -1,5 +1,3 @@
-# Update of Atom Names and tleap Protocol
-
 ## Atom Name Modification
 
 To address the errors related to missing atom types in the provided PDB file (`top9_aelar-2py_ligand-withoutH.pdb`), several atom names were adjusted to ensure compatibility with the parameters defined in the **ff19SB** force field. Below are the details of the modifications:
@@ -16,7 +14,7 @@ The updates resolved the fatal errors reported in **tleap**, allowing proper sys
 
 ## tleap Protocol
 
-The protocol outlined below was used to prepare the system using the **ff19SB** force field and the **OPC3** water model.
+The protocol outlined below was used to prepare the system using the **ff19SB** force field and the **OPC3** water model with an ionic strength of 0.15 M NaCl.
 
 ### Steps Executed in tleap
 
@@ -39,14 +37,15 @@ check mol
 # 6. Solvate the system with the OPC3 water model
 solvatebox mol OPC3BOX 10.0
 
-# 7. Neutralize the system's charge
-addions mol Na+ 14
+# 7. Adjust ionic strength to 0.15 M NaCl
+addionsrand mol Na+ 0.15
+addionsrand mol Cl- 0.15
 
 # 8. Save the necessary files for AMBER simulations
-saveamberparm mol system_ff19SB_OPC3.top system_ff19SB_OPC3.crd
+saveamberparm mol system_ff19SB_OPC3_0.15M.top system_ff19SB_OPC3_0.15M.crd
 
 # 9. Save the solvated system as a PDB file for verification
-savepdb mol system_ff19SB_OPC3_solvated.pdb
+savepdb mol system_ff19SB_OPC3_0.15M_solvated.pdb
 
 # 10. Exit tleap
 quit
@@ -63,11 +62,13 @@ quit
 3. **Atom Name Correction**:
    - Ensured compatibility with the parameters defined in the force field files (frcmod and lib).
 
-4. **Neutralization and Solvation**:
-   - Neutralization with Na+ adjusted the system's total charge (-14).
+4. **Neutralization and Ionic Strength Adjustment**:
+   - Neutralization with Na+ and Cl- adjusted the system's total charge to achieve an ionic strength of 0.15 M, mimicking physiological conditions.
+
+5. **Solvation**:
    - Solvation with a 10 Å buffer ensured appropriate periodic boundary conditions for simulations.
 
-5. **Output Files**:
+6. **Output Files**:
    - `.top` and `.crd` files are required for running simulations in AMBER.
    - The solvated PDB file is valuable for visual inspection and structural verification.
 
@@ -75,4 +76,4 @@ quit
 
 After correcting the atom names and executing the protocol, the system was successfully processed in tleap with the following final output:
 - No fatal errors related to atom types.
-- The system was solvated and neutralized correctly.
+- The system was solvated and neutralized correctly with 0.15 M ionic strength.
