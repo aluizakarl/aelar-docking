@@ -46,7 +46,7 @@ addPdbAtomMap {
 }
 
 # 4. Load the system's PDB file
-mol = loadpdb top9_aelar-2py_ligand-withoutH.pdb
+mol = loadpdb top9_aelar-2py_complex.pdb
 
 # 5. Check the system for errors or issues
 check mol
