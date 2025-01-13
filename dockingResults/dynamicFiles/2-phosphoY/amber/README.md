@@ -1,4 +1,3 @@
-```markdown
 ## Atom Name Modification
 
 To address the errors related to missing atom types in the provided PDB file (`top9_aelar-2py_ligand-withoutH.pdb`), several atom names were adjusted to ensure compatibility with the parameters defined in the **ff19SB** force field. Below are the details of the modifications:
@@ -40,6 +39,11 @@ source leaprc.water.opc3
 # 3. Load the force field for phosphorylated residues
 source leaprc.phosaa19SB
 loadoff phosaa19SB.lib
+
+addPdbAtomMap {
+    {"OP1" "O1P"}
+    {"OP2" "O2P"}
+}
 
 # 4. Load the system's PDB file
 mol = loadpdb top9_aelar-2py_ligand-withoutH.pdb
