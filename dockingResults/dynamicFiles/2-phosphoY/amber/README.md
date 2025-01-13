@@ -26,7 +26,8 @@ source leaprc.protein.ff19SB
 source leaprc.water.opc3
 
 # 3. Load the force field for phosphorylated residues
-source leaprc.phosaa14SB
+source leaprc.phosaa19SB
+loadoff phosaa19SB.lib
 
 # 4. Load the system's PDB file
 mol = loadpdb top9_aelar-2py_ligand-withoutH.pdb
