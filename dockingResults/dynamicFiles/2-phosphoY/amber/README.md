@@ -94,4 +94,3 @@ After preprocessing with H++ and executing the tleap protocol:
 - Atom names and protonation states were corrected.
 - The system was solvated and neutralized correctly with 0.15 M ionic strength.
 - The system is now ready for molecular dynamics simulations using AMBER with the ff19SB force field and OPC3 water model.
-```
