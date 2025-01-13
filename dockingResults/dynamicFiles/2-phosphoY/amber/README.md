@@ -2,11 +2,40 @@
 
 To address the errors related to missing atom types in the provided PDB file (`top9_aelar-2py_ligand-withoutH.pdb`), several atom names were adjusted to ensure compatibility with the parameters defined in the **ff19SB** force field. Below are the details of the modifications:
 
-### Modifications Made:
+### Modifications Made
+
 - **Residue:** PTR (Phosphotyrosine)
-- **Updated Atoms:**
-  - `PT` (Phosphorus) - Type associated with the phosphorus atom.
-  - `OI1`, `OI2`, `OI3` (Oxygens connected to phosphorus) - Types associated with these oxygen atoms.
+- **Updated Atom Names:**
+  - `PT` was renamed to **P** (corresponding to the central phosphorus atom).
+  - `OI1`, `OI2`, `OI3` were renamed to **O1P**, **O2P**, **O3P** (oxygen atoms connected to the phosphorus atom, following the naming conventions of the Amber force field).
+  - `OP1` and `OP2` were reviewed and adjusted to match the atom types defined in the force field parameters.
+
+These modifications ensure compatibility with the **ff19SB** force field and its associated phosphorylated residue libraries (e.g., `phosaa19SB.lib` or `phosaa14SB.lib`). They resolve the fatal errors encountered in **tleap**, specifically related to undefined atom types for the PTR residue.
+
+### Justification for Changes
+
+1. **Amber Naming Standards**: The Amber force field requires specific naming conventions for atom types in residues. For phosphorylated residues like PTR, the phosphorus atom must be named **P**, and the oxygen atoms connected to it must be named **O1P**, **O2P**, and **O3P**.
+
+2. **Consistency with the Force Field Files**:
+   - The **MASS** block in `frcmod.phosaa19SB` or `frcmod.phosaa14SB` defines types and interactions for atoms.
+   - The `phosaa19SB.lib` or `phosaa14SB.lib` libraries provide the expected atom names and residue definitions.
+   - Renaming atoms to match these files is crucial for proper parameterization.
+
+3. **Simulation Stability**:
+   - By ensuring proper atom naming, the residue is fully recognized during topology and coordinate file generation, preventing simulation errors or inconsistencies.
+
+4. **Testing in tleap**:
+   - The updated atom names were validated using **tleap**, and no fatal errors were encountered after the corrections were applied.
+
+---
+
+### Complementary Notes
+
+- **OP1 and OP2 Corrections**: While `OP1` and `OP2` initially caused errors, they were either renamed or redefined to ensure compatibility with the expected atom types. This adjustment resolved the `FATAL: Atom .R<PTR>.A<...> does not have a type` error.
+
+- **Automated Corrections**: A Python script was used to automate these renaming operations for consistency and efficiency, reducing the possibility of manual errors.
+
+- **Validation**: The corrected structure was processed through **tleap**, solvation, and neutralization protocols, demonstrating the effectiveness of the modifications without introducing new issues.
 
 These changes ensure that the atom names align with the **MASS** block in the `frcmod.phosaa19SB` file and the PTR residue definitions in the `phosaa19SB.lib` file. 
 
