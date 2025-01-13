@@ -50,6 +50,10 @@ mol = loadpdb top9_aelar-2py_ligand-withoutH.pdb
 
 # 5. Check the system for errors or issues
 check mol
+charge mol
+
+addIons mol Cl- 14
+addIons mol Na+ 14
 
 # 6. Solvate the system with the OPC3 water model
 solvatebox mol OPC3BOX 10.0
