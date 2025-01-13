@@ -19,8 +19,6 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
 - **Location:** `./models/`
 - **Files:**
   - `ir_catalyticDomain.pdb`
-  - `ir_pt2tyr.pdb`
-  - `ir_pt3tyr.pdb`
   - `ptp-lar_d1&d2domains.pdb`
 
 ### 3. **Prepared and Optimized Models**
@@ -29,9 +27,10 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
 - **Files:**
   - `ir_pt2tyr_prepared.pdb`
   - `ir_pt3tyr_prepared.pdb`
+  - `ptp-lar_d1&d2domains_prep.pdb`
 
 ### 4. **Docking Results**
-- Results from protein-protein docking experiments using HDOCK.
+- Results from protein-protein docking experiments using HADDOCK.
 - **Location:** `./dockingResults/`
 - Files: PDB files from selected docking poses.
 - Supporting log files and scoring summaries.
