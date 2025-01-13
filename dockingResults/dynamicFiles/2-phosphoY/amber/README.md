@@ -63,10 +63,10 @@ addionsrand mol Na+ 0.15
 addionsrand mol Cl- 0.15
 
 # 8. Save the necessary files for AMBER simulations
-saveamberparm mol system_ff19SB_OPC3_0.15M.top system_ff19SB_OPC3_0.15M.crd
+saveamberparm mol 2py_ff19SB_OPC3_0.15M.top 2py_ff19SB_OPC3_0.15M.crd
 
 # 9. Save the solvated system as a PDB file for verification
-savepdb mol system_ff19SB_OPC3_0.15M_solvated.pdb
+savepdb mol s2py_ff19SB_OPC3_0.15M_solvated.pdb
 
 # 10. Exit tleap
 quit
