@@ -32,7 +32,4 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
 ### 4. **Docking Results**
 - Results from protein-protein docking experiments using HADDOCK.
 - **Location:** `./dockingResults/`
-- Files: PDB files from selected docking poses.
-- Supporting log files and scoring summaries.
-- Important files are in the 'dynamicFiles' directory.
-
+- Files: Selected docking poses in PDB format, a summary of the scoring results, and a ZIP file with the best-ranked structures.
