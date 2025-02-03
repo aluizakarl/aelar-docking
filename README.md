@@ -22,7 +22,7 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
   - `ptp-lar_d1&d2domains.pdb`
 
 ### 3. **Prepared and Optimized Models**
-- Structures prepared and optimized for docking using tools: Vienna (http://vienna-ptm.univie.ac.at/) and Maestro (PrepWizard).
+-  Structures were prepared and optimized for docking using the SwissSidechain tool (Pymol plugin) and the PrepWizard tool (Maestro suite).
 - **Location:** `./prepared_structures/`
 - **Files:**
   - `ir_pt2tyr_prepared.pdb`
