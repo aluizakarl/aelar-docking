@@ -28,8 +28,12 @@ This repository contains the data used in the manuscript **"Protein Tyrosine Pho
   - `ir_pt2tyr_prepared.pdb`
   - `ir_pt3tyr_prepared.pdb`
   - `ptp-lar_d1&d2domains_prep.pdb`
+### 4. **Mapped binding sites**
+  - **PTP-LAR Active site residues:** 192, 222, 223, 224, 225, 227, 229 and 230.
+  - **PTP-LAR phospho peptide binding site residues:** 56, 57, 58, 59 and 129.
+  - **IR PTM Residues:** 178, 179 and 174.
 
-### 4. **Docking Results**
+### 5. **Docking Results**
 - Results from protein-protein docking experiments using HADDOCK.
 - **Location:** `./dockingResults/`
 - Files: Selected docking poses in PDB format, a summary of the scoring results, and a ZIP file with the best-ranked structures.
